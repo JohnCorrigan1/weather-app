@@ -1,7 +1,4 @@
 import getWeatherF, { getWeatherC } from "./functions/apiFunctions";
-import "./styles.css"
-
-
 
 const searchButton = <HTMLButtonElement>document.querySelector(".search-city");
 const cityInput = <HTMLInputElement>document.querySelector(".city-input");

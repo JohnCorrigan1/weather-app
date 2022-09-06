@@ -1,5 +1,4 @@
 import weatherObj from "../functions/weatherObject";
-import './../styles.css'
 
 export default function loadWeather(weatherObj: weatherObj) {
   const cityName = document.querySelector(".city")!;
