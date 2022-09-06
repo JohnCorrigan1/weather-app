@@ -12,7 +12,7 @@ export default async function getWeather(city: string) {
   const lowTemp = Math.round(weatherData.main.temp_min);
   const cityName = weatherData.name;
   const conditions = weatherData.weather[0].main;
-  const country = weatherData.sys.country
+  const country = weatherData.sys.country;
 
   const myCity = new weatherObj(
     currentTemp,
@@ -21,10 +21,10 @@ export default async function getWeather(city: string) {
     lowTemp,
     cityName,
     conditions,
-    country,
+    country
   );
 
-  loadWeather(myCity)
+  loadWeather(myCity);
 
-  console.log(weatherData)
+  console.log(weatherData);
 }
