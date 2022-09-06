@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
+  background-image: url('../src/imgs/milky-way.jpg');
 }
 
 .header {
@@ -19,41 +20,41 @@ body {
   align-items: flex-end;
 }
 
-.city-input{
-    display: flex;
-    padding: 5px;
-    background-color: rgba(95, 101, 102, 0.5);
-    font-size: medium;
-    color: #FFF;
-    font-weight: 550;
-    border-radius: 15px;
-    border: 2px solid black;
-    -webkit-box-shadow: 0 0 20px #000;
-    box-shadow: 0 0 20px #000;
+.city-input {
+  display: flex;
+  padding: 5px;
+  background-color: rgba(95, 101, 102, 0.5);
+  font-size: medium;
+  color: #fff;
+  font-weight: 550;
+  border-radius: 15px;
+  border: 2px solid black;
+  -webkit-box-shadow: 0 0 20px #000;
+  box-shadow: 0 0 20px #000;
 }
 
-.search-city{
-    padding: 5px;
-    width: 70px;
-    background-color: rgba(95, 101, 102, 0.5);
-    border: 2px solid black;
-    color:#FFF;
-    font-size: medium;
-    font-weight: 600;
-    border-radius: 20px;
+.search-city {
+  padding: 5px;
+  width: 70px;
+  background-color: rgba(95, 101, 102, 0.5);
+  border: 2px solid black;
+  color: #fff;
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 20px;
 }
 
-.search-city:hover{
-    cursor: pointer;
-    transform: scale(1.05);
+.search-city:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
-.city-input:focus{
-    border: none;
+.city-input:focus {
+  border: none;
 }
 
-.city-input::placeholder{
-  color: rgba(255, 255, 255, 0.5)
+.city-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .search-city {
@@ -95,7 +96,7 @@ p {
 }
 
 .toggle {
-    margin-top: 10px;
+  margin-top: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -139,7 +140,7 @@ p {
   left: 32px;
 }
 
-.degree-toggle{
+.degree-toggle {
   color: #fff;
   display: flex;
   flex-direction: column;
