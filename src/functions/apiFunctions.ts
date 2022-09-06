@@ -51,8 +51,6 @@ async function getWeatherC(city: string) {
   );
 
   loadWeather(myCity);
-
-  console.log(weatherData);
 }
 
-export { getWeatherC }
+export { getWeatherC };
