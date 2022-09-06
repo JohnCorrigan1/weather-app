@@ -1,3 +1,59 @@
-h1{
-    color: red;
+hmml{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    background-image: url('./../src/imgs/clear.jpg');
+}
+
+.header{
+    color: white;
+}
+
+.form{
+    display: flex;
+    align-items: flex-end;
+}
+
+.search-city{
+    margin-left: 2rem;
+}
+
+input{
+    display: flex;
+}
+
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    max-height: 60vh;
+    width: 500px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgba(95, 101, 102, 0.5);
+    margin-top: 10vh;
+    box-shadow: 5px 5px 2px -2px black;
+    font-weight: 700;
+    color: white;
+}
+
+p{
+    font-size: large;
+}
+
+.city{
+    grid-column: 1/3;
+}
+
+.temp{
+    grid-column: 1/3;
 }
