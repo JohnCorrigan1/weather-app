@@ -20,6 +20,11 @@ body{
     align-items: flex-end;
 }
 
+label{
+    color: white;
+    font-weight: 700;
+}
+
 .search-city{
     margin-left: 2rem;
 }
