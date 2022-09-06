@@ -2,9 +2,11 @@ import loadWeather from "../ui/loadWeather";
 import weatherObj from "./weatherObject";
 
 export default async function getWeatherF(city: string) {
+  try{
   const response = await fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=c5fe265671b668dfb0c7585215149ba1&units=imperial`
   );
+  
   const weatherData = await response.json();
   const currentTemp = Math.round(weatherData.main.temp);
   const feelsLike = Math.round(weatherData.main.feels_like);
@@ -25,9 +27,16 @@ export default async function getWeatherF(city: string) {
   );
 
   loadWeather(myCity);
+  }
+  
+  catch(err){
+    alert("Cannot find that city")
+  }
+
 }
 
 async function getWeatherC(city: string) {
+  try{
   const response = await fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=c5fe265671b668dfb0c7585215149ba1&units=metric`
   );
@@ -51,6 +60,12 @@ async function getWeatherC(city: string) {
   );
 
   loadWeather(myCity);
+}
+
+catch(err){
+  alert("Cannot find that city")
+
+}
 }
 
 export { getWeatherC };
