@@ -9,11 +9,11 @@ export default function loadWeather(weatherObj: weatherObj) {
   const low = document.querySelector(".low")!;
 
   cityName.textContent = weatherObj.cityName + ', ' + weatherObj.country;
-  temp.textContent = weatherObj.currentTemp.toString();
+  temp.textContent = weatherObj.currentTemp.toString() + '\u00B0';
   conditions.textContent = "Conditions: " + weatherObj.conditions;
-  feels.textContent = "Feels Like: " + weatherObj.feelsLike;
-  high.textContent = "High: " + weatherObj.highTemp.toString();
-  low.textContent = "Low: " + weatherObj.lowTemp.toString();
+  feels.textContent = "Feels Like: " + weatherObj.feelsLike + '\u00B0';
+  high.textContent = "High: " + weatherObj.highTemp.toString() + '\u00B0';
+  low.textContent = "Low: " + weatherObj.lowTemp.toString() + '\u00B0';
 
   setBackground(weatherObj);
 }
